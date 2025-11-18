@@ -1,69 +1,165 @@
-# React + TypeScript + Vite
+Dynamic E-Commerce Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: https://e-commerce-product-catalog-2xk2.onrender.com/
 
-Currently, two official plugins are available:
+Overview
 
-## React Compiler
+This project is a dynamic e-commerce product catalog built to simulate a real-world scenario where developers balance functional requirements with user experience considerations. Users can browse, filter, and sort products seamlessly while enjoying a responsive and optimized interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see
-## Expanding the ESLint configuration
+The main focus of this project is to demonstrate:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Scalable and maintainable frontend architecture
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Efficient API integration for dynamic data fetching
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Optimized performance with pagination and infinite scrolling
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Accessibility and responsiveness across devices
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Project Goals
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+API Integration: Fetch and display product data dynamically from a backend API.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+User Convenience: Implement filtering and sorting for easier product discovery.
+
+Enhanced User Experience: Build a responsive, user-friendly interface with seamless navigation and optimized performance.
+
+Technologies Used
+
+React / React Native – Component-based UI development.
+
+Redux – State management for scalable applications.
+
+TypeScript – Type safety and maintainable code.
+
+Tailwind CSS – Modern, responsive styling.
+
+Key Features
+1. API Data Integration
+
+Dynamically fetch product data from a backend API.
+
+Handle loading states and errors for smooth UX.
+
+2. Filtering and Sorting
+
+Category Filtering: Users can filter products by category.
+
+Price Sorting: Products can be sorted in ascending or descending order.
+
+Multi-Criteria Filtering: Combine filters for precise results.
+
+3. Pagination and Infinite Scrolling
+
+Pagination: Numbered pages for viewing products in chunks.
+
+Infinite Scrolling: Dynamically load more products as the user scrolls.
+
+4. Responsive Design
+
+Fully responsive layout for desktop, tablet, and mobile devices.
+
+Adaptive design ensures a consistent user experience across all screen sizes.
+
+Implementation Process
+Git Commit Workflow
+
+Initial Setup
+
+feat: Set up project structure with React and TypeScript
+
+feat: Add API integration for fetching product data
+
+Feature Development
+
+feat: Implement product filtering and sorting functionality
+
+feat: Add pagination and infinite scrolling
+
+UI Enhancements
+
+style: Enhance UI with Tailwind CSS
+
+Bug Fixes
+
+fix: Resolve bugs in filtering logic
+
+Documentation
+
+docs: Update README with project setup and features
+
+Deployment
+
+The application is deployed on Render for public access.
+
+Evaluation Criteria
+
+Functionality
+
+Products load dynamically from the API
+
+Filtering and sorting work correctly
+
+Pagination and infinite scrolling function smoothly
+
+Code Quality
+
+Clean, maintainable, and well-documented code
+
+Effective use of TypeScript interfaces and types
+
+Properly structured Redux state management
+
+User Experience
+
+Intuitive and visually appealing interface
+
+Fully responsive layout
+
+No major bugs affecting usability
+
+Version Control
+
+Frequent, descriptive commits
+
+Organized repository structure following best practices
+
+How It’s Built
+
+Frontend Setup
+
+Initialize React project with TypeScript
+
+Configure Tailwind CSS for styling
+
+Set up Redux for state management
+
+API Integration
+
+Connect to backend API for products
+
+Handle loading, error, and success states
+
+Display products dynamically in UI
+
+UI Features
+
+Implement filtering and sorting by category and price
+
+Add pagination and infinite scrolling
+
+Ensure responsive design across devices
+
+Optimization
+
+Lazy load product images for performance
+
+Minimize re-renders with React memoization
+
+Deployment
+
+Build optimized production bundle
+
+Deploy on Render to make the app publicly accessible
+
+This project demonstrates a full-featured, scalable e-commerce frontend with modern technologies, emphasizing user experience, performance, and maintainability.
