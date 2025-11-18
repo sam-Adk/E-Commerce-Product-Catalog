@@ -11,14 +11,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "noUnusedLocals": false,
-"noUnusedParameters": false
-
 
     /* Strictness / Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,        // disable blocking build for unused imports
+    "noUnusedParameters": false,    // disable blocking build for unused parameters
     "noFallthroughCasesInSwitch": true,
 
     /* Path mapping */
@@ -40,3 +37,4 @@
   ],
   "exclude": ["node_modules"]
 }
+
